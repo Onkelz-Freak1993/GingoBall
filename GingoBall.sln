@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GingoBall", "Assembly-CSharp.csproj", "{3A323B69-6FB7-1305-37FE-B39916C5DFEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GingoBall", "Assembly-CSharp-Editor.csproj", "{813C8C12-6B8E-5B48-7251-43223BBE5F25}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A323B69-6FB7-1305-37FE-B39916C5DFEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A323B69-6FB7-1305-37FE-B39916C5DFEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A323B69-6FB7-1305-37FE-B39916C5DFEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A323B69-6FB7-1305-37FE-B39916C5DFEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{813C8C12-6B8E-5B48-7251-43223BBE5F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813C8C12-6B8E-5B48-7251-43223BBE5F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813C8C12-6B8E-5B48-7251-43223BBE5F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813C8C12-6B8E-5B48-7251-43223BBE5F25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
