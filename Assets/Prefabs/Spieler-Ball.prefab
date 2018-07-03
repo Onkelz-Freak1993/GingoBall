@@ -255,7 +255,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 100
+  m_Intensity: 5
   m_Range: 1.25
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -296,6 +296,7 @@ MonoBehaviour:
   shootFG: {fileID: 2800000, guid: 83a8b5fb42c12ab40a12ce416a73cfd6, type: 3}
   speedMulti: 75
   power: 0
+  line: {fileID: 1064605997098666}
 --- !u!114 &114311736368549456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -409,10 +410,10 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  - {x: 0, y: 0, z: 0}
   m_Parameters:
     serializedVersion: 2
-    widthMultiplier: 0.1
+    widthMultiplier: 0.3
     widthCurve:
       serializedVersion: 2
       m_Curve:

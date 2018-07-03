@@ -201,15 +201,15 @@ MonoBehaviour:
     y: 0
     width: 1103
     height: 505
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
+  m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
   - {fileID: 12}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -309,7 +309,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoom: 0
     m_UniformScale: 1
     m_UpDirection: 1
@@ -368,9 +368,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 84e4ffff
-    m_LastClickedID: -7036
-    m_ExpandedIDs: 9efbffff00000000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 54c6fefff439ffff9c62ffff72e1fffff4f4ffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -426,9 +426,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8.158289, y: -8.038739, z: -5.552566}
+    m_Target: {x: 5.2779016, y: -9.108011, z: -2.6311798}
     speed: 2
-    m_Value: {x: 8.158289, y: -8.038739, z: -5.552566}
+    m_Value: {x: 5.2779016, y: -9.108011, z: -2.6311798}
   m_RenderMode: 24
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -456,9 +456,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.40261257, y: 0.582805, z: -0.40673813, w: 0.57689303}
   m_Size:
-    m_Target: 24.123314
+    m_Target: 18.960814
     speed: 2
-    m_Value: 24.123314
+    m_Value: 18.960814
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -536,18 +536,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\gingo\Documents\GitHub\GingoBall
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a280000
-    m_LastClickedID: 10330
+    m_SelectedIDs: 66280000
+    m_LastClickedID: 10342
     m_ExpandedIDs: 000000008a270000302800006a28000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
