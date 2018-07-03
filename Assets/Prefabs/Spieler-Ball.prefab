@@ -55,7 +55,6 @@ GameObject:
   - component: {fileID: 23336603928131426}
   - component: {fileID: 54597458104759092}
   - component: {fileID: 135872498216483360}
-  - component: {fileID: 114824738675622544}
   - component: {fileID: 114345329343766762}
   - component: {fileID: 114247852960899460}
   - component: {fileID: 114370944102785244}
@@ -296,6 +295,7 @@ MonoBehaviour:
   shootBG: {fileID: 2800000, guid: bd175997f3eec36499cfc20bdbcedd3a, type: 3}
   shootFG: {fileID: 2800000, guid: 83a8b5fb42c12ab40a12ce416a73cfd6, type: 3}
   speedMulti: 75
+  power: 0
 --- !u!114 &114311736368549456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -373,17 +373,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hit: {fileID: 8300000, guid: e7ffb20855bce1b428eb7a803d61585a, type: 3}
   bounce: {fileID: 8300000, guid: f47c898f12b4572478f9a9fe6eea3051, type: 3}
---- !u!114 &114824738675622544
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1677676143255188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00339e42656e59d4f9b7a562e5815474, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!120 &120644163611996674
 LineRenderer:
   m_ObjectHideFlags: 1

@@ -60,11 +60,9 @@
      <Compile Include="Assets\Scripts\SnookerBallController.cs" />
      <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
      <None Include="Assets\Maps\Cross.xml" />
-     <None Include="Assets\Maps\Erste.xml" />
      <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
      <None Include="Assets\Maps\Einfach.xml" />
      <None Include="Assets\Maps\Wild.xml" />
-     <None Include="Assets\Maps\Test1.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
