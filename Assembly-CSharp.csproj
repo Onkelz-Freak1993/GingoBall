@@ -51,6 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AS_ModernMenu1\README.cs" />
+     <Compile Include="Assets\AS_ModernMenu1\Scripts\CheckMusicVolume.cs" />
+     <Compile Include="Assets\AS_ModernMenu1\Scripts\CheckOptions.cs" />
+     <Compile Include="Assets\AS_ModernMenu1\Scripts\CheckSFXVolume.cs" />
+     <Compile Include="Assets\AS_ModernMenu1\Scripts\MainMenuNew.cs" />
+     <Compile Include="Assets\AS_ModernMenu1\Scripts\OptionsMenuNew.cs" />
      <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
      <Compile Include="Assets\Scripts\BallScore.cs" />
      <Compile Include="Assets\Scripts\BallShoot.cs" />
@@ -63,6 +69,9 @@
      <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
      <None Include="Assets\Maps\Einfach.xml" />
      <None Include="Assets\Maps\Wild.xml" />
+     <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+     <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
