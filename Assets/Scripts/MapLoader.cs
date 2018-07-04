@@ -25,7 +25,9 @@ public class MapLoader : MonoBehaviour {
 	public GameObject wall;
 	public GameObject air;
 
-	private int ballSpawns = 6;
+	public int ballsScored;
+
+	private int ballSpawns = 1;
 	private int ballsSpawned = 0;
 
 	private bool blueTarget = false;
@@ -45,6 +47,22 @@ public class MapLoader : MonoBehaviour {
 		parseXmlFile (data);
 	}
 
+	public void onScore(){
+		Debug.Log ("Scored");
+		ballsScored += 1;
+
+		if(ballsScored == ballsSpawned){
+			ballsSpawned = 0;
+			ballsScored = 0;
+			if(ballSpawns <= 20){
+				ballSpawns += 1;
+			}
+
+			spawnBalls (false);
+		}
+
+	}
+
 	void parseXmlFile(string xmlData)
 	{
 		XmlDocument xmlDoc = new XmlDocument ();
@@ -59,10 +77,18 @@ public class MapLoader : MonoBehaviour {
 			XmlNode type = posY.NextSibling;
 			createMapTile (int.Parse(posX.InnerXml), int.Parse(posY.InnerXml), int.Parse(type.InnerXml));
 		}
-		spawnBalls ();
+		spawnBalls (true);
 	}
 
-	void spawnBalls(){
+	public void respawnBall(GameObject ball){
+		ball.GetComponent<Rigidbody> ().velocity = new Vector3 (0,0,0);
+		sI = Random.Range (0, spawnPoints.Length);
+		randomObject = spawnPoints [sI];
+		ball.transform.position = randomObject.transform.position+new Vector3(0,0.2f,0);
+
+	}
+
+	void spawnBalls(bool white){
 		spawnPoints = GameObject.FindGameObjectsWithTag ("spawnField");
 		for(int i=0; ballsSpawned < ballSpawns; i++){
 			sI = Random.Range (0, spawnPoints.Length);
@@ -98,11 +124,13 @@ public class MapLoader : MonoBehaviour {
 				break;
 			}
 			if(randSpawn == true)
-				Instantiate (temp, randomObject.transform.position, Quaternion.identity);
+				Instantiate (temp, randomObject.transform.position+new Vector3(0,0.2f,0), Quaternion.identity);
 		}
-		sI = Random.Range (0, spawnPoints.Length);
-		randomObject = spawnPoints [sI];
-		Instantiate (whiteBall, randomObject.transform.position, Quaternion.identity);
+		if (white) {
+			sI = Random.Range (0, spawnPoints.Length);
+			randomObject = spawnPoints [sI];
+			Instantiate (whiteBall, randomObject.transform.position, Quaternion.identity);
+		}
 
 	}
 

@@ -180,7 +180,6 @@ public class MainMenuNew : MonoBehaviour {
 
 
 	public void endlessStart(){
-		SceneManager.UnloadSceneAsync ("MainMenu");
-		SceneManager.LoadScene("GingoBall", LoadSceneMode.Additive);
+		
 	}
 }

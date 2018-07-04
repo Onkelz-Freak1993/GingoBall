@@ -291,7 +291,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1479601967222166}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00339e42656e59d4f9b7a562e5815474, type: 3}
   m_Name: 
@@ -307,9 +307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f5824a135788a48934d811f16644f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToDestroy: {fileID: 1479601967222166}
-  TheObject: {fileID: 0}
-  Player: {fileID: 1479601967222166}
 --- !u!114 &114894575698799990
 MonoBehaviour:
   m_ObjectHideFlags: 1

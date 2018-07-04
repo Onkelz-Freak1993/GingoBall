@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Ball
   - spawnField
+  - Blue
+  - Red
+  - Yellow
+  - Green
   layers:
   - Default
   - TransparentFX

@@ -58,19 +58,19 @@
      <Compile Include="Assets\AS_ModernMenu1\Scripts\MainMenuNew.cs" />
      <Compile Include="Assets\AS_ModernMenu1\Scripts\OptionsMenuNew.cs" />
      <Compile Include="Assets\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+     <Compile Include="Assets\Scripts\BallRespawn.cs" />
      <Compile Include="Assets\Scripts\BallScore.cs" />
      <Compile Include="Assets\Scripts\BallShoot.cs" />
      <Compile Include="Assets\Scripts\BallSound.cs" />
      <Compile Include="Assets\Scripts\DragObject.cs" />
+     <Compile Include="Assets\Scripts\Game.cs" />
      <Compile Include="Assets\Scripts\MapLoader.cs" />
      <Compile Include="Assets\Scripts\SnookerBallController.cs" />
      <None Include="Assets\LowPolyWater_Pack\LowPoly Island\Credits.txt" />
-     <None Include="Assets\Maps\Cross.xml" />
      <None Include="Assets\LowPolyWater_Pack\Shaders\WaterShaded.shader" />
-     <None Include="Assets\Maps\Einfach.xml" />
-     <None Include="Assets\Maps\Wild.xml" />
      <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
+     <None Include="Assets\Maps\Easy.xml" />
      <None Include="Assets\AS_ModernMenu1\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
