@@ -48,7 +48,6 @@ public class MapLoader : MonoBehaviour {
 	}
 
 	public void onScore(){
-		Debug.Log ("Scored");
 		ballsScored += 1;
 
 		if(ballsScored == ballsSpawned){

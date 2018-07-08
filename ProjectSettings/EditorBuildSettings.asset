@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/MainMenu.unity
+    guid: 0bf66e103dcfda04e8361fa8bbcdaebd
   - enabled: 1
     path: Assets/GingoBall.unity
     guid: fe2f250fe2fa21f43a9256face394d58
