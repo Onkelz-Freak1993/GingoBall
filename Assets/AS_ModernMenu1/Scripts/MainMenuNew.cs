@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Networking;
 
 public class MainMenuNew : MonoBehaviour {
 
@@ -25,6 +26,8 @@ public class MainMenuNew : MonoBehaviour {
 	public GameObject mpmenu;
 	public GameObject playbg;
 
+	public GameObject mplan;
+
 	// highlights
 	public GameObject lineGame;
 	public GameObject lineVideo;
@@ -33,6 +36,9 @@ public class MainMenuNew : MonoBehaviour {
 	public GameObject lineMovement;
 	public GameObject lineCombat;
 	public GameObject lineGeneral;
+
+	public string hostPort;
+
 
 
 	//Useful Functions
@@ -54,35 +60,54 @@ public class MainMenuNew : MonoBehaviour {
 	// ##############
 
 	public void  PlayCampaign (){
-		areYouSure.gameObject.active = false;
-		endlessBtn.gameObject.active = true;
-		multiplayerBtn.gameObject.active = true;
-		loadMapBtn.gameObject.active = true;
-		playbg.gameObject.active = true;
+		areYouSure.gameObject.SetActive(false);
+		endlessBtn.gameObject.SetActive(true);
+		multiplayerBtn.gameObject.SetActive(true);
+		loadMapBtn.gameObject.SetActive(true);
+		playbg.gameObject.SetActive(true);
 	}
 
+
 	public void  PlayMultiplayer(){
-		endlessBtn.gameObject.active = false;
-		multiplayerBtn.gameObject.active = false;
-		loadMapBtn.gameObject.active = false;
-		mpmenu.gameObject.active = true;
-		playbg.gameObject.active = false;
+		endlessBtn.gameObject.SetActive(false);
+		multiplayerBtn.gameObject.SetActive(false);
+		loadMapBtn.gameObject.SetActive(false);
+		mpmenu.gameObject.SetActive(true);
+		playbg.gameObject.SetActive(false);
 	}
-	
+
+	// LAN 
+
+	public void PlayLAN(){
+		mpmenu.gameObject.SetActive(false);
+		mplan.gameObject.SetActive(true);
+	}
+
+	public void CloseLAN(){
+		mplan.gameObject.SetActive(false);
+		mpmenu.gameObject.SetActive(true);
+	}
+		
+	public void LANHost(){
+		
+	}
+
+	// #############
+
 	public void  CloseMultiplayer(){
-		endlessBtn.gameObject.active = true;
-		multiplayerBtn.gameObject.active = true;
-		loadMapBtn.gameObject.active = true;
-		mpmenu.gameObject.active = false;
-		playbg.gameObject.active = true;
+		endlessBtn.gameObject.SetActive(true);
+		multiplayerBtn.gameObject.SetActive(true);
+		loadMapBtn.gameObject.SetActive(true);
+		mpmenu.gameObject.SetActive(false);
+		playbg.gameObject.SetActive(true);
 	}
 	
 	public void  DisablePlayCampaign (){
-		endlessBtn.gameObject.active = false;
-		multiplayerBtn.gameObject.active = false;
-		loadMapBtn.gameObject.active = false;
-		mpmenu.gameObject.active = false;
-		playbg.gameObject.active = false;
+		endlessBtn.gameObject.SetActive(false);
+		multiplayerBtn.gameObject.SetActive(false);
+		loadMapBtn.gameObject.SetActive(false);
+		mpmenu.gameObject.SetActive(false);
+		playbg.gameObject.SetActive(false);
 	}
 
 	public void  Position2 (){
@@ -95,81 +120,81 @@ public class MainMenuNew : MonoBehaviour {
 	}
 
 	public void  GamePanel (){
-		PanelControls.gameObject.active = false;
-		PanelVideo.gameObject.active = false;
-		PanelGame.gameObject.active = true;
-		PanelKeyBindings.gameObject.active = false;
+		PanelControls.gameObject.SetActive(false);
+		PanelVideo.gameObject.SetActive(false);
+		PanelGame.gameObject.SetActive(true);
+		PanelKeyBindings.gameObject.SetActive(false);
 
-		lineGame.gameObject.active = true;
-		lineControls.gameObject.active = false;
-		lineVideo.gameObject.active = false;
-		lineKeyBindings.gameObject.active = false;
+		lineGame.gameObject.SetActive( true);
+		lineControls.gameObject.SetActive( false);
+		lineVideo.gameObject.SetActive( false);
+		lineKeyBindings.gameObject.SetActive( false);
 	}
 
 	public void  VideoPanel (){
-		PanelControls.gameObject.active = false;
-		PanelVideo.gameObject.active = true;
-		PanelGame.gameObject.active = false;
-		PanelKeyBindings.gameObject.active = false;
+		PanelControls.gameObject.SetActive( false);
+		PanelVideo.gameObject.SetActive( true);
+		PanelGame.gameObject.SetActive( false);
+		PanelKeyBindings.gameObject.SetActive( false);
 
-		lineGame.gameObject.active = false;
-		lineControls.gameObject.active = false;
-		lineVideo.gameObject.active = true;
-		lineKeyBindings.gameObject.active = false;
+		lineGame.gameObject.SetActive( false);
+		lineControls.gameObject.SetActive( false);
+		lineVideo.gameObject.SetActive( true);
+		lineKeyBindings.gameObject.SetActive( false);
 	}
 
 	public void  ControlsPanel (){
-		PanelControls.gameObject.active = true;
-		PanelVideo.gameObject.active = false;
-		PanelGame.gameObject.active = false;
-		PanelKeyBindings.gameObject.active = false;
+		PanelControls.gameObject.SetActive( true);
+		PanelVideo.gameObject.SetActive( false);
+		PanelGame.gameObject.SetActive( false);
+		PanelKeyBindings.gameObject.SetActive( false);
 
-		lineGame.gameObject.active = false;
-		lineControls.gameObject.active = true;
-		lineVideo.gameObject.active = false;
-		lineKeyBindings.gameObject.active = false;
+		lineGame.gameObject.SetActive( false);
+		lineControls.gameObject.SetActive( true);
+		lineVideo.gameObject.SetActive( false);
+		lineKeyBindings.gameObject.SetActive( false);
 	}
 
 	public void  KeyBindingsPanel (){
-		PanelControls.gameObject.active = false;
-		PanelVideo.gameObject.active = false;
-		PanelGame.gameObject.active = false;
-		PanelKeyBindings.gameObject.active = true;
+		PanelControls.gameObject.SetActive( false);
+		PanelVideo.gameObject.SetActive( false);
+		PanelGame.gameObject.SetActive( false);
+		PanelKeyBindings.gameObject.SetActive( true);
 
-		lineGame.gameObject.active = false;
-		lineControls.gameObject.active = false;
-		lineVideo.gameObject.active = true;
-		lineKeyBindings.gameObject.active = true;
+		lineGame.gameObject.SetActive( false);
+		lineControls.gameObject.SetActive( false);
+		lineVideo.gameObject.SetActive( true);
+		lineKeyBindings.gameObject.SetActive( true);
 	}
 
 	public void  MovementPanel (){
-		PanelMovement.gameObject.active = true;
-		PanelCombat.gameObject.active = false;
-		PanelGeneral.gameObject.active = false;
+		PanelMovement.gameObject.SetActive( true);
+		PanelCombat.gameObject.SetActive( false);
+		PanelGeneral.gameObject.SetActive( false);
 
-		lineMovement.gameObject.active = true;
-		lineCombat.gameObject.active = false;
-		lineGeneral.gameObject.active = false;
+		lineMovement.gameObject.SetActive( true);
+		lineCombat.gameObject.SetActive( false);
+		lineGeneral.gameObject.SetActive( false);
 	}
 
 	public void  CombatPanel (){
-		PanelMovement.gameObject.active = false;
-		PanelCombat.gameObject.active = true;
-		PanelGeneral.gameObject.active = false;
+		PanelMovement.gameObject.SetActive( false);
+		PanelCombat.gameObject.SetActive( true);
+		PanelGeneral.gameObject.SetActive( false);
 
-		lineMovement.gameObject.active = false;
-		lineCombat.gameObject.active = true;
-		lineGeneral.gameObject.active = false;
+		lineMovement.gameObject.SetActive( false);
+		lineCombat.gameObject.SetActive( true);
+		lineGeneral.gameObject.SetActive( false);
 	}
 
 	public void  GeneralPanel (){
-		PanelMovement.gameObject.active = false;
-		PanelCombat.gameObject.active = false;
-		PanelGeneral.gameObject.active = true;
+		PanelMovement.gameObject.SetActive( false);
+		PanelCombat.gameObject.SetActive( false);
+		PanelGeneral.gameObject.SetActive( true);
 
-		lineMovement.gameObject.active = false;
-		lineCombat.gameObject.active = false;
-		lineGeneral.gameObject.active = true;
+		lineMovement.gameObject.SetActive( false);
+		lineCombat.gameObject.SetActive( false);
+		lineGeneral.gameObject.SetActive( true);
 	}
 
 	public void  PlayHover (){
@@ -185,12 +210,12 @@ public class MainMenuNew : MonoBehaviour {
 	}
 
 	public void  AreYouSure (){
-		areYouSure.gameObject.active = true;
+		areYouSure.gameObject.SetActive( true);
 		DisablePlayCampaign();
 	}
 
 	public void  No (){
-		areYouSure.gameObject.active = false;
+		areYouSure.gameObject.SetActive( false);
 	}
 
 	public void  Yes (){
