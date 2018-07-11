@@ -25,8 +25,11 @@ public class MainMenuNew : MonoBehaviour {
 	public GameObject loadMapBtn;
 	public GameObject mpmenu;
 	public GameObject playbg;
-
+	
+	// campaign MP button sub menu
 	public GameObject mplan;
+	public GameObject mpcanvas;
+	public GameObject settingscanvas;
 
 	// highlights
 	public GameObject lineGame;
@@ -91,7 +94,19 @@ public class MainMenuNew : MonoBehaviour {
 	public void LANHost(){
 		
 	}
-
+	
+	// Serverbrowser / MP-Menu
+	
+	public void showMP(){
+		mpcanvas.gameObject.SetActive(true);
+		settingscanvas.gameObject.SetActive(false);
+	}
+	
+	public void showSettings(){
+		mpcanvas.gameObject.SetActive(false);
+		settingscanvas.gameObject.SetActive(true);
+	}
+	
 	// #############
 
 	public void  CloseMultiplayer(){
