@@ -30,6 +30,7 @@ public class MainMenuNew : MonoBehaviour {
 	public GameObject mplan;
 	public GameObject mpcanvas;
 	public GameObject settingscanvas;
+	public GameObject filterPanel;
 
 	// highlights
 	public GameObject lineGame;
@@ -105,6 +106,14 @@ public class MainMenuNew : MonoBehaviour {
 	public void showSettings(){
 		mpcanvas.gameObject.SetActive(false);
 		settingscanvas.gameObject.SetActive(true);
+	}
+	
+	public void showFilter(){
+		filterPanel.gameObject.SetActive(true);
+	}
+	
+	public void closeFilter(){
+		filterPanel.gameObject.SetActive(false);
 	}
 	
 	// #############
